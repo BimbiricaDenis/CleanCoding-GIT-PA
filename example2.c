@@ -11,7 +11,11 @@ int data;
 struct Node *next;
 } NODE;
 
-typedef struct Graph{ int vertices;int *visited;struct Node **adjacency_lists;} GPH;
+typedef struct Graph{ 
+int vertices;
+int *visited;
+struct Node **adjacency_lists;
+} GPH;
 /// utils
      NODE *create_node(int v){ NODE *new_node = malloc(sizeof(NODE)); new_node->data = v; new_node->next = NULL;return new_node;}
      GPH *create_graph(int vertices)
